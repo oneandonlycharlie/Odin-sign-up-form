@@ -79,14 +79,13 @@ body {
         font-size: 1.2rem;
     }
     p {
-        padding-top: 1rem;
+        padding: 1rem 0%;
     }
     form {
         background-color: white;
         box-sizing: inherit;
         height:35%;
         padding-left:3%;
-        }
         .inputs{
             display: flex;
             max-width: 45vw;
@@ -105,6 +104,9 @@ body {
             height: 2rem;
             border: 1px solid #E5E7EB;
         }
+        p {
+            font-size: 1.2rem;
+        }
     }
     button {
         background-color: rgb(46, 126, 180);
@@ -119,6 +121,7 @@ body {
     button + p {
         margin-left:3%;
     }
+}
 
     #password:valid, #confirmed_password:valid{
         border-color:#E5E7EB;
