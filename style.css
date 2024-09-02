@@ -1,0 +1,133 @@
+@import "node_modules/modern-normalize/modern-normalize.css";
+
+@font-face {
+    font-family: Norse-bold;
+    src: url(Fonts/Norse-Bold.otf);
+}
+
+:root {
+    line-height: 1.5;
+  }
+  
+  h1, h2, h3, h4, h5, figure, p, ol, ul {
+    margin: 0;
+  }
+  
+  ol[role="list"], ul[role="list"] {
+    list-style: none;
+    padding-inline: 0;
+  }
+  
+  h1, h2, h3, h4, h5 {
+    font-size: inherit;
+    font-weight: inherit;
+  }
+  
+  img {
+    display: block;
+    max-inline-size: 100%;
+  }
+
+
+body {
+    font-family:system-ui, "Segoe UI", Roboto, Helvetica, 
+                Arial, sans-serif, "Apple Color Emoji", 
+                "Segoe UI Emoji", "Segoe UI Symbol";
+    margin: 0%;
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    font-size: 1rem;
+    background-image: url("img/Sea.jpeg");
+    background-size: 135vh;
+    background-repeat: no-repeat;
+    border: 2px solid black;
+}
+
+.left {
+    height: inherit;
+    flex-basis: 40%;
+    position: relative;
+    .logo {
+        position: absolute;
+        top: 15%;
+        width: 100%;
+        height: 15%;
+        text-align: center;
+        font-family: Norse-bold;
+        font-size: 5rem;
+        color: aliceblue;
+        background-color: rgb(235, 247, 255, 30%);
+    }
+    img {
+        display: inline-block;
+        max-width: 5rem;
+        height: 4rem;
+    }
+}
+
+.right {
+    height: inherit;
+    flex-basis: 60%;
+    box-sizing: border-box;
+    background-color:rgb(242, 246, 244);
+    .header {
+        box-sizing: inherit;
+        height: 30%;
+        padding:8% 30% 5% 3%;
+        font-weight: 600;
+        font-size: 1.2rem;
+    }
+    p {
+        padding-top: 1rem;
+    }
+    form {
+        background-color: white;
+        box-sizing: inherit;
+        height:35%;
+        padding-left:3%;
+        }
+        .inputs{
+            display: flex;
+            max-width: 45vw;
+            flex-wrap: wrap;
+            gap:calc(10% + 1rem);
+            div {
+                display: inherit;
+                flex-flow: column;
+                flex-basis: 15vw;
+            }
+        }
+        label{
+            font-size: 0.8rem;
+        }
+        input {
+            height: 2rem;
+            border: 1px solid #E5E7EB;
+        }
+    }
+    button {
+        background-color: rgb(46, 126, 180);
+        border: 0;
+        border-radius: 10px;
+        color:aliceblue;
+        height: 2.5rem;
+        font-size: 1.2rem;
+        margin: 3% 3%;
+        padding: 0.5rem 3rem;
+    }
+    button + p {
+        margin-left:3%;
+    }
+
+    #password:valid, #confirmed_password:valid{
+        border-color:#E5E7EB;
+    }
+
+    #password:invalid, #confirmed_password:invalid{
+        border-color:rgb(203, 82, 82);
+    }
+
+    input:focus {
+        box-shadow: 3px 3px 3px grey;
+    }
